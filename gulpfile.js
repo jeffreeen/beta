@@ -62,7 +62,6 @@ task("styles", () => {
     // .pipe(px2rem())
     .pipe(gulpif(env == 'dev',
       autoprefixer({
-        browsers: ['last 2 versions'],
         cascade: false
 		  })
     ))
